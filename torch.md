@@ -10,7 +10,7 @@
 在深度学习中，在新数据上运行训练过的模型的过程被称为推理（inference）。为了进行推理，我们需要将网络置于 eval 模式  
 > 如果忘记加eval：那么一些预先训练过的模型，如批归一化（Batch Normalization）和Dropout 将不会产生有意义的答案，这仅仅是因为它们内部工作的方式。现在 eval 设置好了，我们准备进行推理    
 
-AlexNet，它是在图像识别方面早期具有突破性的网络之一
+AlexNet，它是在图像识别方面早期具有突破性的网络之一。AlexNet 和 ResNet【2015】 是 2 个深度卷积神经网络，它们的发布为图像识别设定了新的基准。
 
 ![image](https://user-images.githubusercontent.com/64322636/219554569-c857b1e8-4fe1-42e0-b678-e69826076e23.png)
 
