@@ -50,7 +50,7 @@ Theano最早的深度学习框架之一，但已停止开发
 
 ### Torch Hub机制
 - 可以在Github上发布模型
-- 无论是否预先训练过权重，都可以通过 PyTorch 可以理解的接口将其公开发布  
+- 无论是否预先训练过权重，都可以通过 PyTorch 可以理解的接口将其公开发布    
 从Github上加自预训练模型：
 > 1. 找到hubconf.py  
 ```
@@ -72,5 +72,6 @@ def another_entry_fn(*args, **kwargs):
 import torch
 from torch import hub
 
-resnet18_model = hub.load('pytorch/vision:master','resnet18',pretrained=True)#GitHub 存储库的名称和分支、函数名称、关键参数)
+resnet18_model = hub.load('pytorch/vision:master','resnet18',pretrained=True)
+#GitHub 存储库的名称和分支、函数名称、关键参数)
 ```
