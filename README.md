@@ -47,3 +47,30 @@ Theano最早的深度学习框架之一，但已停止开发
 - torch.optim 优化器
 - torch.Tensor 张量  
 图片由RGB通道、空间图像维度（高度、宽度）组成
+
+### Torch Hub机制
+- 可以在Github上发布模型
+- 无论是否预先训练过权重，都可以通过 PyTorch 可以理解的接口将其公开发布  
+从Github上加自预训练模型：
+> 1. 找到hubconf.py  
+```
+dependencies = ['torch', 'math'] #代码所依赖的可选模型块列表
+
+def some_entry_fn(*args, **kwargs): 
+ model = build_some_model(*args, **kwargs) 
+ return model 
+
+def another_entry_fn(*args, **kwargs): 
+ model = build_another_model(*args, **kwargs) 
+ return model 
+#作为存储库入口点向用户暴露一个或多个函数。这些函数应该根据模型初始化参数并将其返回
+```
+> 2.pytorch/vision 主分支的快照及其权重下载到本地目录  
+> 3.默认下载到本地的 torch/hub 目录下  
+> 4.然后运行 resnet18 入口点函数，该函数返回实例化的模型  
+```
+import torch
+from torch import hub
+
+resnet18_model = hub.load('pytorch/vision:master','resnet18',pretrained=True)#GitHub 存储库的名称和分支、函数名称、关键参数)
+```
