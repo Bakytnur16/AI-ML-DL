@@ -1,14 +1,15 @@
 # 过程
 ![image](https://user-images.githubusercontent.com/64322636/219554369-87b18509-bcf0-4d16-9331-60e370b59ba7.png)
 
+1.数据处理：  
+数据样本转换为张量  
+将多个张量组成批样本  
 
 ## 图像识别  
 ![image](https://user-images.githubusercontent.com/64322636/219554377-04062976-1ac4-4341-8325-26fa50ef1556.png)
 在深度学习中，在新数据上运行训练过的模型的过程被称为推理（inference）。为了进行推理，我们需要将网络置于 eval 模式  
-> 如果忘记加eval：那么一些预先训练过的模型，如批归一化（Batch Normalization）和Dropout 将不会产生有意义的答案，这仅仅是因为它们内部工作的方式。现在 eval 设置好了，我们准备进行推理   
-1.数据处理：
-数据样本转换为张量
-将多个张量组成批样本
+> 如果忘记加eval：那么一些预先训练过的模型，如批归一化（Batch Normalization）和Dropout 将不会产生有意义的答案，这仅仅是因为它们内部工作的方式。现在 eval 设置好了，我们准备进行推理    
+
 AlexNet，它是在图像识别方面早期具有突破性的网络之一
 
 ![image](https://user-images.githubusercontent.com/64322636/219554569-c857b1e8-4fe1-42e0-b678-e69826076e23.png)
