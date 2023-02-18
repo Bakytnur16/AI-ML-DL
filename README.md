@@ -78,3 +78,24 @@ from torch import hub
 resnet18_model = hub.load('pytorch/vision:master','resnet18',pretrained=True)
 #GitHub 存储库的名称和分支、函数名称、关键参数)
 ```
+
+### HDF5 格式和 h5py 库
+- HDF5 是一种可移植的、被广泛支持的格式，用于将序列化的多维数组组织在一个嵌套的键值对字典中
+- Python 通过 h5py 库支持 HDF5，该库接收和返回 NumPy 数组格式的数据  
+<code>$ conda install h5py</code>
+- 张量转换为np数组，传递给create_dataset()
+```
+import h5py 
+f = h5py.File('../data/p1ch3/ourpoints.hdf5', 'w') 
+dset = f.create_dataset('coords',data=points.numpy()) 
+f.close() 
+```
+- 加载数据集的最后两个点：
+```
+# In[62]: 
+f = h5py.File('../data/p1ch3/ourpoints.hdf5', 'r') 
+dset = f['coords'] 
+last_points = dset[-2:]
+```
+- 一旦完成数据加载，就关闭文件。关闭 HDF5 文件会使数据集失效，然后试图访问 dset 会抛出一
+个异常。
