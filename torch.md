@@ -34,3 +34,6 @@ AlexNet，它是在图像识别方面早期具有突破性的网络之一。Alex
 
 python列表与张量的区别：
 ![image](https://user-images.githubusercontent.com/64322636/219563994-e864f166-6f31-4eb5-8929-4dc0ea299c86.png)
+
+![image](https://user-images.githubusercontent.com/64322636/219853812-39fc9b80-7ef7-4ca8-af7c-9e10a6488f69.png)
+
