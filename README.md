@@ -30,7 +30,7 @@
 - 面部交换技术
 
 ## torch
-> pytorch是一个python编成库，有助于构建深度学习项目（深度学习库)  
+> pytorch是一个python编程库，有助于构建深度学习项目（深度学习库)  
 > PyTorch 库允许你高效地构建和训练神经网络模型  
 > pytorch为了性能是用c++和cuda编写的  
 > **TorchScript** 允许我们预编译模型，并且不仅可以在 Python 环境中调用它们，还可以在C++程序和移动设备上调用它们  
