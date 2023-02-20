@@ -90,7 +90,7 @@ f = h5py.File('../data/p1ch3/ourpoints.hdf5', 'w')
 dset = f.create_dataset('coords',data=points.numpy()) 
 f.close() 
 ```
-- 加载数据集的最后两个点：
+- 加载数据集的最后两个点：  
 ```
 # In[62]: 
 f = h5py.File('../data/p1ch3/ourpoints.hdf5', 'r') 
