@@ -38,7 +38,7 @@
 ### VAE生成模型
 ## torch
 - 深度学习开发框架之一
-- https://discuss.pytorch.org/（论坛）
+- 论坛： https://discuss.pytorch.org/
 > pytorch是一个python编程库，有助于构建深度学习项目（深度学习库)  
 > PyTorch 库允许你高效地构建和训练神经网络模型  
 > pytorch为了性能是用c++和cuda编写的  
